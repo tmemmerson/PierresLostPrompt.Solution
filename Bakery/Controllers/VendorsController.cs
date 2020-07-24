@@ -39,11 +39,11 @@ namespace Bakery.Controllers
     }
 
     [HttpPost("/vendors/{vendorID}/transactions")]
-    public ActionResult Create(int vendorId, string transactionDescription, string transactionPrice)
+    public ActionResult Create(int vendorId, string transactionDate, string transactionItem, string transactionQuantity, string transactionPrice, string transactionNote, string transactionBalance)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor foundVendor = Vendor.Find(vendorId);
-      Transaction newTransaction = new Transaction(transactionDescription, transactionPrice);
+      Transaction newTransaction = new Transaction(transactionDate, transactionItem, transactionQuantity, transactionPrice, transactionNote, transactionBalance);
       foundVendor.AddTransaction(newTransaction);
       List<Transaction> vendorTransactions = foundVendor.Transactions;
       model.Add("transactions", vendorTransactions);
