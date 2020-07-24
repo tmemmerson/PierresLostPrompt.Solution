@@ -81,7 +81,7 @@ namespace Bakery.TestTools
       Vendor result = Vendor.Find(2);
 
       //assert
-      Assert.AreEqual(newVendorB, result)
+      Assert.AreEqual(newVendorB, result);
     }
 
   }
