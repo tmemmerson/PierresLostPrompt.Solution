@@ -16,16 +16,16 @@ namespace Bakery.Models
 
     public Transaction(string transactionDate, string transactionItem, string transactionQuantity, string transactionPrice, string transactionNote, string transactionBalance)
     {
-      TransactionDate = transactionDate;
+/*       TransactionDate = transactionDate;
       TransactionItem = transactionItem;
       TransactionQuantity = transactionQuantity;
       TransactionPrice = transactionPrice;
       TransactionNote = transactionNote;
       TransactionBalance = transactionBalance;
       _instances.Add(this);
-      Id = _instances.Count;
-
+      Id = _instances.Count; */
     }
+
     public static List<Transaction> GetAll()
     {
       return _instances;
