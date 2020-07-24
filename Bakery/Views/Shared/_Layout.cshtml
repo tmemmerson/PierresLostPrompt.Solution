@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body background="https://coding-assets.s3-us-west-2.amazonaws.com/img/PierresBakery-bg.png">
-    @RenderSection("featured", required: false)  
-        <section class="contentX main-content clear-fix">  
+    
+    @RenderSection("mainIndex", required: false)  
+    <section class="mainIndex"></section>
+
+    @RenderSection("transactionAddForm", required: false)  
+    <section class="transactionAddForm"></section>
+
+    @RenderSection("vendorAddForm", required: false)  
+    <section class="vendorAddForm"></section>
+
     @RenderBody()
-        </section>
+    
   </body>
 </html>
