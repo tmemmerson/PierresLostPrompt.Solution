@@ -3,7 +3,8 @@
 }
 
 <h1>Vendor Transaction Log:</h1>
-<h2>@Model["transaction"].Description</h2>
-<h3>Vendor Name: @Model["vendor"].Name</h3>
-<a href="/vendors/@Model["vendor"].Id/transactions/new">Add more transactions</a>
+<h2>Name: @Model["vendor"].Name</h2>
+<h3>Notes: @Model["transaction"].Description</h3>
+<h3>@Model["transaction"].TransactionPrice</h3>
+<a href="/vendors/@Model["vendor"].Id/transactions/new">Add transaction</a>
 <a href="/vendors">See all vendors</a>
