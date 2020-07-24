@@ -3,6 +3,26 @@ body {
   max-width: 1200px;
 }
 
-.contentX {
+.mainIndex {
   background-color: rgb(212, 195, 147);
+}
+
+.transactionsShow {
+  background-color: rgb(122, 12, 173);
+}
+
+.transactionsNew {
+  background-color: rgb(44, 192, 24);
+}
+
+.vendorsIndex {
+  background-color: rgb(252, 118, 223);
+}
+
+.vendorsNew {
+  background-color: rgb(23, 77, 47);
+}
+
+.vendorsShow {
+  background-color: rgb(84, 176, 238);
 }
