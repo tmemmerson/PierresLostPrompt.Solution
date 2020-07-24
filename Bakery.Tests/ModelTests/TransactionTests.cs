@@ -12,5 +12,13 @@ namespace Bakery.TestTools
     {
       Transaction.ClearAll();
     }
+  
+    [TestMethod]
+    public void TransactionConstructor_CreatesInstanceOfTransaction_Transaction()
+    {
+      Transaction newTransaction = new Transaction("test");
+      Assert.AreEqual(typeof(Transaction), newTransaction.GetType());
+    }
+
   }
 }
