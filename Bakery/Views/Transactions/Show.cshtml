@@ -4,7 +4,13 @@
 
 <h1>Vendor Transaction Log:</h1>
 <h2>Name: @Model["vendor"].Name</h2>
-<h3>Notes: @Model["transaction"].Description</h3>
-<h3>@Model["transaction"].TransactionPrice</h3>
+<h3>Date: @Model["transaction"].TransactionDate</h3>
+<h3>Item: @Model["transaction"].TransactionItem</h3>
+<h3>Quantity: @Model["transaction"].TransactionQuantity</h3>
+<h3>Sale Price: @Model["transaction"].TransactionPrice</h3>
+<h3>Notes: @Model["transaction"].TransactionNote</h3>
+<h3>Balance: @Model["transaction"].TransactionBalance</h3>
+
+
 <a href="/vendors/@Model["vendor"].Id/transactions/new">Add transaction</a>
 <a href="/vendors">See all vendors</a>
