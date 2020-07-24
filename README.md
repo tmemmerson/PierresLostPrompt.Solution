@@ -6,7 +6,7 @@
 
 # _Pierre's Bakery: Part Deux_
 
-#### _Pierre has recently come into a lot of money and he has been receiving phone calls from the IRS. Pierre seems quite panicked and it willing to pay you a large sum to quickly update his vendor accounting books prior to his audit this coming Monday. Can you help Pierre avoid jailtime?_	
+#### _Pierre has come into a lot of money. Recently, he has been receiving phone calls from the IRS. Pierre seems quite panicked about this & is willing to pay you a large sum to quickly update his vendor accounting books. Will you help our baker "cook some books" prior to his audit Monday? Can you help Pierre avoid jailtime?_	
 
 #### By _**Tristan Emmerson**_
 
