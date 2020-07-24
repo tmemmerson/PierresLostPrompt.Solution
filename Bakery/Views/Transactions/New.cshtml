@@ -6,9 +6,24 @@
 
 <form action="/vendors/@Model.Id/transactions" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-  <label for="transactionDescription">transaction notes</label>
-  <input id="transactionDescription" name="transactionDescription" type="text">
-  <label for="price">price</label>
+
+  <label for="transactionDate">[date]</label>
+  <input id="transactionDate" name="transactionDate" type="text">
+
+  <label for="transactionItem">[item]</label>
+  <input id="transactionItem" name="transactionItem" type="text">
+  
+  <label for="transactionQuantity">[quantity]</label>
+  <input id="transactionQuantity" name="transactionQuantity" type="text">
+
+  <label for="transactionPrice">[sale price]</label>
   <input id="transactionPrice" name="transactionPrice" type="text">
+  
+  <label for="transactionNote">[notes]</label>
+  <input id="transactionNote" name="transactionNote" type="text">
+
+  <label for="transactionBalance">[balance]</label>
+  <input id="transactionBalance" name="transactionBalance" type="text">
+  
   <button type="submit">Add</button>
 </form>
