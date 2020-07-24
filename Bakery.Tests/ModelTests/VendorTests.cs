@@ -84,5 +84,23 @@ namespace Bakery.TestTools
       Assert.AreEqual(newVendorB, result);
     }
 
+    [TestMethod]
+    public void AddTransaction_BindsTransactionToVendor_TransactionList()
+    {
+      //arrange
+      string transactionNote = "excellent and pleasant customer";
+      Transaction newTransaction = new Transaction(transactionNote);
+      List<Transaction> newList = new List<Transaction> { newTransaction };
+      string name = "Tristan";
+      Vendor newVendor = new Vendor(name);
+      newVendor.AddTransaction(newTransaction);
+
+      //act
+      List<Transaction> result = newVendor.Transactions;
+
+      //assert
+      CollectionAssert.AreEqual(newList, result);
+    }
+
   }
 }
