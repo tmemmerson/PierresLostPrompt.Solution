@@ -1,7 +1,7 @@
 @{
   Layout = "_Layout";
 }
-
+<div class="container transactionsShow">
 <h1>Vendor Transaction Log:</h1>
 <h2>Name: @Model["vendor"].Name</h2>
 <h3>Date: @Model["transaction"].TransactionDate</h3>
@@ -14,3 +14,4 @@
 
 <a href="/vendors/@Model["vendor"].Id/transactions/new">Add transaction</a>
 <a href="/vendors">See all vendors</a>
+</div>
