@@ -24,7 +24,7 @@ namespace Bakery.Models
 
     public static List<Vendor> GetAll()
     {
-      /* return _instances; */
+      return _instances;
     }
 
     public static Vendor Find(int searchId)
