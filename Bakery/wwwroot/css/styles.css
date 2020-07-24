@@ -3,6 +3,6 @@ body {
   max-width: 1200px;
 }
 
-#containerX {
-  background-color: aliceblues;
+.contentX {
+  background-color: rgb(212, 195, 147);
 }
