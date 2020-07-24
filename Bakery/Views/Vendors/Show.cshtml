@@ -1,3 +1,10 @@
 @{
   Layout = "_Layout";
 }
+
+<h1>vendor transaction log:</h1>
+
+<h2>@Model["transaction"].Description</h2>
+<h3>Transaction: @Model["transaction"].Name</h3>
+<a href="/transactions/@Model["transaction"].Id/transactions/new">log new transaction</a>
+<a href="/transactions">view all vendor transactions</a>
