@@ -2,8 +2,9 @@
   Layout = "_Layout";
 }
 
+<section class="container transactionsNew">
 <h1>Record new transaction for @Model.Name</h1>
-
+<div class="container">
 <form action="/vendors/@Model.Id/transactions" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
 
@@ -24,6 +25,8 @@
 
   <label for="transactionBalance">[balance]</label>
   <input id="transactionBalance" name="transactionBalance" type="text">
-  
+
   <button type="submit">Add</button>
 </form>
+</div>
+</section>
