@@ -48,7 +48,7 @@ namespace Bakery.TestTools
       int result = newVendor.Id;
 
       //assert
-      Assert.AreEqual(1, result);GetId_ReturnsVendorId_Int
+      Assert.AreEqual(1, result);
     }
 
 
