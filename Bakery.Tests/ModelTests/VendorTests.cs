@@ -36,6 +36,5 @@ namespace Bakery.TestTools
       //assert
       Assert.AreEqual(name, result);
     }
-
   }
 }
