@@ -59,7 +59,7 @@ namespace Bakery.TestTools
       string nameB = "Tasha";
       Vendor newVendorA = new Vendor(nameA);
       Vendor newVendorB = new Vendor(nameB);
-      List<Vendor> newList = new List<Vendor> { newVendorA, nerVendorB };
+      List<Vendor> newList = new List<Vendor> { newVendorA, newVendorB };
 
       //act
       List<Vendor> result = Vendor.GetAll();
