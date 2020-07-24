@@ -2,9 +2,17 @@
   Layout = "_Layout";
 }
 
-<h1>vendor transaction log:</h1>
+@using Bakery.Models;
 
-<h2>@Model["transaction"].Description</h2>
-<h3>Transaction: @Model["transaction"].Name</h3>
-<a href="/transactions/@Model["transaction"].Id/transactions/new">log new transaction</a>
-<a href="/transactions">view all vendor transactions</a>
+<h3>vendor log:</h3>
+
+<ol>
+  @foreach (Transaction transaction in @Model["transactions"])
+  {
+    <li><a href="/vendors/@Model["vendor"].Id/transactions/@transaction.Id">@transaction.Description</a></li>
+  }
+</ol>
+
+<p><a href="/vendors/@Model["vendor"].Id/transactions/new">add transaction</a></p>
+<p><a href="/vendors">return to vendor list</a></p>
+<p><a href="/">home</a></p>
