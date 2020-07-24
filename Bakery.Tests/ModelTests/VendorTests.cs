@@ -68,8 +68,21 @@ namespace Bakery.TestTools
       CollectionAssert.AreEqual(newList, result);
     }
 
+    [TestMethod]
+    public void Find_ReturnsCorrectVendor_Vendor()
+    {
+      //arrange
+      string nameA = "Tristan";
+      string nameB = "Tasha";
+      Vendor newVendorA = new Vendor(nameA);
+      Vendor newVendorB = new Vendor(nameB);
 
+      //act
+      Vendor result = Vendor.Find(2);
 
+      //assert
+      Assert.AreEqual(newVendorB, result)
+    }
 
   }
 }
