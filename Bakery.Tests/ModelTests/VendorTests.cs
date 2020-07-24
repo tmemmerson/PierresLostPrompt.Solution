@@ -19,5 +19,6 @@ namespace Bakery.TestTools
       Vendor newVendor = new Vendor("vendor name");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
+    
   }
 }
