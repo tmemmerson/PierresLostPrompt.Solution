@@ -24,7 +24,13 @@ _vendor/retailer accounting logs written in razor c# asp.net core mvc_
 |-	|-	|-	|
 | Pierre can add a new vendor to a log 	| [add vendor] 	| Danny's Donuts 	|
 | Pierre can add a new vendor transaction to log 	| [add transaction] 	| donuts/$350 	|
-| Pierre can view full transaction log by individual vendor 	| Vendor: Danny's Donuts 	| Danny's Donuts<br>chocolate donuts/$350<br>maple bars/$200 	|
+| Pierre can view full transaction log by individual vendor 	| Vendor: Danny's Donuts 	| Danny's Donuts 	|
+| Pierre can add a date to transaction log 	| 11/16/2019 	| Danny's Donuts<br>date: 11/16/2019 	|
+| Pierre can add an item type to transaction log 	| item: donuts 	| Danny's Donuts<br>date: 11/16/2019<br>item: donuts 	|
+| Pierre can add a quantity to transaction log 	| quantity: 20 boxes 	| Danny's Donuts<br>date: 11/16/2019<br>item: donuts<br>quantity: 20 boxes 	|
+| Pierre can add a price to transaction log 	| sale price: $425.00 	| Danny's Donuts<br>date: 11/16/2019<br>item: donuts<br>quantity: 20 boxes<br>sale price: $425.00 	|
+| Pierre can add notes to a transaction log 	| notes: wonderfully<br>plesant man 	| Danny's Donuts<br>date: 11/16/2019<br>item: donuts<br>quantity: 20 boxes<br>sale price: $425.00<br>notes: wonderfully pleasant man 	|
+| Pierre can add a current balance to transaction log 	| balance: $0.00 	| Danny's Donuts<br>date: 11/16/2019<br>item: donuts<br>quantity: 20 boxes<br>sale price: $425.00<br>notes: wonderfully pleasant man<br>current balance: $0.00 	|
 
 <br>
 
