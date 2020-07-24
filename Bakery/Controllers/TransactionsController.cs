@@ -7,14 +7,14 @@ namespace Bakery.Controllers
 {
   public class TransactionsController : Controller
   {
-    [HttpsGet("/vendors/{vendorId}/transactions/new")]
+    [HttpGet("/vendors/{vendorId}/transactions/new")]
     public ActionResult New(int vendorId)
     {
       Vendor vendor = Vendor.Find(vendorId);
       return View(vendor);
     }
 
-    [HttpsGet("/vendors/{vendorId}/transactions/{transactionId}")]
+    [HttpGet("/vendors/{vendorId}/transactions/{transactionId}")]
     public ActionResult Show(int vendorId, int transactionId)
     {
       Transaction transaction = Transaction.Find(transactionId);
