@@ -6,10 +6,10 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
-  <body>
-    <body background="https://coding-assets.s3-us-west-2.amazonaws.com/img/PierresBakery-bg.png"></body>
-    <div class="container">
+  <body background="https://coding-assets.s3-us-west-2.amazonaws.com/img/PierresBakery-bg.png">
+    @RenderSection("featured", required: false)  
+        <section class="contentX main-content clear-fix">  
     @RenderBody()
-    </div>
+        </section>
   </body>
 </html>
