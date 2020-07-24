@@ -9,13 +9,17 @@ namespace Bakery.Models
 
     public int Id {get; }
 
+    public string TransactionPrice {get; set;}
+
     private static List<Transaction> _instances = new List<Transaction> { };
 
-    public Transaction(string description)
+    public Transaction(string description, string transactionPrice)
     {
       Description = description;
       _instances.Add(this);
       Id = _instances.Count;
+      TransactionPrice = transactionPrice;
+
     }
     
     public static List<Transaction> GetAll()
