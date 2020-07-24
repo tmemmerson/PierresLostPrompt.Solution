@@ -9,7 +9,7 @@
 <ol>
   @foreach (Transaction transaction in @Model["transactions"])
   {
-    <li><a href="/vendors/@Model["vendor"].Id/transactions/@transaction.Id">@transaction.Description</a></li>
+    <li><a href="/vendors/@Model["vendor"].Id/transactions/@transaction.Id">@transaction.TransactionNote</a></li>
   }
 </ol>
 
