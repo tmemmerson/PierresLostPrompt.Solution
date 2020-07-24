@@ -26,7 +26,6 @@ namespace Bakery.Models
       Id = _instances.Count;
 
     }
-    
     public static List<Transaction> GetAll()
     {
       return _instances;
