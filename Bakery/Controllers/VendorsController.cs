@@ -14,7 +14,7 @@ namespace Bakery.Controllers
       return View(allVendors);
     }
 
-    [HttpsGet("/vendors/new")]
+    [HttpGet("/vendors/new")]
     public ActionResult New()
     {
       return View();
@@ -27,7 +27,7 @@ namespace Bakery.Controllers
       return RedirectToAction("Index");
     }
 
-    [HttpsGet("/vendors/{id}")]
+    [HttpGet("/vendors/{id}")]
     public ActionResult Show(int id)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
@@ -38,7 +38,7 @@ namespace Bakery.Controllers
       return View(model);
     }
 
-    [HttpsPost("/vendors/{vendorID}/transactions")]
+    [HttpPost("/vendors/{vendorID}/transactions")]
     public ActionResult Create(int vendorId, string transactionDescription)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
@@ -50,6 +50,6 @@ namespace Bakery.Controllers
       model.Add("vendor", foundVendor);
       return View("Show", model);
     }
-    
+
   }
 }
