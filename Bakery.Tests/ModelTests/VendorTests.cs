@@ -51,7 +51,22 @@ namespace Bakery.TestTools
       Assert.AreEqual(1, result);
     }
 
+    [TestMethod]
+    public void GetAll_ReturnsAllVendorObjects_VendorList()
+    {
+      //arrange
+      string nameA = "Tristan";
+      string nameB = "Tasha";
+      Vendor newVendorA = new Vendor(nameA);
+      Vendor newVendorB = new Vendor(nameB);
+      List<Vendor> newList = new List<Vendor> { newVendorA, nerVendorB };
 
+      //act
+      List<Vendor> result = Vendor.GetAll();
+
+      //assert
+      CollectionAssert.AreEqual(newList, result);
+    }
 
 
 
