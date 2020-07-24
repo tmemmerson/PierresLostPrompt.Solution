@@ -29,7 +29,7 @@ namespace Bakery.Models
 
     public static Vendor Find(int searchId)
     {
-      /* return _instances[searchId-1]; */
+      return _instances[searchId-1];
     }
 
     public void AddTransaction(Transaction transaction)
