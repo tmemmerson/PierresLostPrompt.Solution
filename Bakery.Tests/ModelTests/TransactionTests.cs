@@ -13,11 +13,19 @@ namespace Bakery.TestTools
       Transaction.ClearAll();
     }
   
-    [TestMethod]
-    public void TransactionConstructor_CreatesInstanceOfTransaction_Transaction()
+  [TestMethod]
+    public void GetNote_ReturnsNote_String()
     {
-      Transaction newTransaction = new Transaction("test");
-      Assert.AreEqual(typeof(Transaction), newTransaction.GetType());
+      string transactionNote = "test";
+      string transactionDate = "test";
+      string transactionItem = "test";
+      string transactionQuantity = "test";
+      string transactionPrice = "test";
+      string transactionBalance = "test";
+      Transaction newTransaction = new Transaction(transactionNote, transactionDate, transactionItem, transactionQuantity, transactionPrice, transactionBalance);
+      string result = newTransaction.TransactionNote;
+
+      Assert.AreEqual(transactionNote, result);
     }
 
   }
