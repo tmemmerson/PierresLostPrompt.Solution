@@ -106,5 +106,28 @@ namespace Bakery.TestTools
       //assert
       Assert.AreEqual(1, result);
     }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectTransaction_Transaction()
+    {
+      //arrange
+      string transactionNoteA = "sketchy dude";
+      string transactionNoteB = "most loyal customer";
+      string transactionDate = "1";
+      string transactionItem = "2";
+      string transactionQuantity = "3";
+      string transactionPrice = "4";
+      string transactionBalance = "5";
+      Transaction newTransactionA = new Transaction(transactionNoteA, transactionDate, transactionItem, transactionQuantity, transactionPrice, transactionBalance);
+      Transaction newTransactionB = new Transaction(transactionNoteB, transactionDate, transactionItem, transactionQuantity, transactionPrice, transactionBalance);
+
+      //act
+      Transaction result = Transaction.Find(2);
+
+      //assert
+      Assert.AreEqual(newTransactionB, result);
+    }
+
+
   }
 }
