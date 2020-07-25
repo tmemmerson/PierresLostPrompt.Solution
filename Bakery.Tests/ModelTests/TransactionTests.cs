@@ -53,6 +53,19 @@ namespace Bakery.TestTools
       //assert
       Assert.AreEqual(updatedDescription, result);
     }
-    
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_TransactionList()
+    {
+      // Arrange
+      List<Transaction> newTransaction = new List<Transaction> { };
+
+      // Act
+      List<Transaction> result = Transaction.GetAll();
+
+      // Assert
+      CollectionAssert.AreEqual(newTransaction, result);
+    }    
+
   }
 }
