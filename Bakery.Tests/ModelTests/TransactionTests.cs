@@ -57,14 +57,36 @@ namespace Bakery.TestTools
     [TestMethod]
     public void GetAll_ReturnsEmptyList_TransactionList()
     {
-      // Arrange
+      // arrange
       List<Transaction> newTransaction = new List<Transaction> { };
 
-      // Act
+      // act
       List<Transaction> result = Transaction.GetAll();
 
-      // Assert
+      // assert
       CollectionAssert.AreEqual(newTransaction, result);
-    }    
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsTransactions_TransactionList()
+    {
+      //Arrange
+      string descriptionA = "nice";
+      string descriptionB = "mean";
+      string transactionDate = "1";
+      string transactionItem = "2";
+      string transactionQuantity = "3";
+      string transactionPrice = "4";
+      string transactionBalance = "5";
+      Transaction newTransactionA = new Transaction(descriptionA, transactionDate, transactionItem, transactionQuantity, transactionPrice, transactionBalance);
+      Transaction newTransactionB = new Transaction(descriptionB, transactionDate, transactionItem, transactionQuantity, transactionPrice, transactionBalance);
+      List<Transaction> newList = new List<Transaction> { newTransactionA, newTransactionB };
+
+      //Act
+      List<Transaction> result = Transaction.GetAll();
+
+      //Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
