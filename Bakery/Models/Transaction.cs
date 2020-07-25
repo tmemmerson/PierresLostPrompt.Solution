@@ -29,7 +29,7 @@ namespace Bakery.Models
 
     public static List<Transaction> GetAll()
     {
-      /* return _instances; */
+      return _instances;
     }
 
     public static void ClearAll()
