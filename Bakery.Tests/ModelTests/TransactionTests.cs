@@ -127,7 +127,5 @@ namespace Bakery.TestTools
       //assert
       Assert.AreEqual(newTransactionB, result);
     }
-
-
   }
 }
