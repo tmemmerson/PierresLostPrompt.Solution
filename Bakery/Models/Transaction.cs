@@ -20,7 +20,7 @@ namespace Bakery.Models
       TransactionItem = transactionItem;
       TransactionQuantity = transactionQuantity;
       TransactionPrice = transactionPrice;
-      /* TransactionNote = transactionNote; */
+      TransactionNote = transactionNote;
       TransactionBalance = transactionBalance;
       _instances.Add(this);
       Id = _instances.Count;
