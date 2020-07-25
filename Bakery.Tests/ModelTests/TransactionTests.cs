@@ -88,5 +88,6 @@ namespace Bakery.TestTools
       //Assert
       CollectionAssert.AreEqual(newList, result);
     }
+
   }
 }
