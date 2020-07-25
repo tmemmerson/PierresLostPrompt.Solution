@@ -16,16 +16,42 @@ namespace Bakery.TestTools
   [TestMethod]
     public void GetNote_ReturnsNote_String()
     {
+      //arrange
       string transactionNote = "test";
       string transactionDate = "test";
       string transactionItem = "test";
       string transactionQuantity = "test";
       string transactionPrice = "test";
       string transactionBalance = "test";
+      
+      //act
       Transaction newTransaction = new Transaction(transactionNote, transactionDate, transactionItem, transactionQuantity, transactionPrice, transactionBalance);
       string result = newTransaction.TransactionNote;
-
+      
+      //assert
       Assert.AreEqual(transactionNote, result);
+    }
+
+    [TestMethod]
+    
+    public void SetTransactionNote_SetTransactionNote_String()
+    {
+      //arrange
+      string transactionNote = "wonderful and pleasant man";
+      string transactionDate = "test";
+      string transactionItem = "test";
+      string transactionQuantity = "test";
+      string transactionPrice = "test";
+      string transactionBalance = "test";
+      Transaction newTransaction = new Transaction(transactionNote, transactionDate, transactionItem, transactionQuantity, transactionPrice, transactionBalance);
+
+      //act
+      string updatedDescription = "horribly unpleasant man";
+      newTransaction.TransactionNote = updatedDescription;
+      string result = newTransaction.TransactionNote;
+
+      //assert
+      Assert.AreEqual(updatedDescription, result);
     }
   }
 }
