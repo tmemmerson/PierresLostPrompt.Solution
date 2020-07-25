@@ -27,6 +27,5 @@ namespace Bakery.TestTools
 
       Assert.AreEqual(transactionNote, result);
     }
-
   }
 }
