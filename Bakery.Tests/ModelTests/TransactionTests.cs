@@ -106,6 +106,5 @@ namespace Bakery.TestTools
       //assert
       Assert.AreEqual(1, result);
     }
-
   }
 }
