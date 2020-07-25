@@ -66,6 +66,5 @@ namespace Bakery.TestTools
       // Assert
       CollectionAssert.AreEqual(newTransaction, result);
     }    
-
   }
 }
